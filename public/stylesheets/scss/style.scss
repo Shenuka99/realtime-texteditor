@@ -68,7 +68,7 @@ body {
     align-items: center;
 
     .options-section {
-      gap: 10px;
+      gap: 20px;
       display: flex;
       align-items: center;
       text-align: center;
@@ -79,7 +79,7 @@ body {
       .toolbar-item {
         height: 15px;
         width: 15px;
-        stroke-width: 1.5;
+        stroke-width: 2;
       }
 
       .dropdown-menu {
