@@ -1,0 +1,89 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+body .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+body .header .header-left-section {
+  display: flex;
+}
+body .header .header-left-section .logo {
+  width: 60px;
+  height: 60px;
+}
+body .header .header-left-section .header-left-sub-section {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10px;
+}
+body .header .header-left-section .header-left-sub-section .filename {
+  font-size: 20px;
+  margin-block: 5px;
+  font-weight: 400;
+}
+body .header .header-left-section .header-left-sub-section .menu-section {
+  display: flex;
+  gap: 10px;
+}
+body .header .header-right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body .header .header-right-section .collabarate-btn {
+  height: 40px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+  background-color: lightblue;
+  color: black;
+}
+body .header .header-right-section img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+body .toolbar {
+  background: rgb(195, 215, 221);
+  height: 35px;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+body .toolbar .options-section {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid;
+  padding-inline: 10px;
+}
+body .toolbar .options-section .toolbar-item {
+  height: 15px;
+  width: 15px;
+  stroke-width: 1.5;
+}
+body .toolbar .options-section .dropdown-menu {
+  margin: 0;
+  display: flex;
+}
+body .toolbar .options-section .dropdown-menu p {
+  margin: 0;
+}
+body .toolbar .options-section .font-size-box {
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 5px;
+}
+body .toolbar .options-section .font-size-box p {
+  padding: 4px 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

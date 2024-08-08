@@ -1,0 +1,104 @@
+body {
+  // padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    .header-left-section {
+      display: flex;
+
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .header-left-sub-section {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 10px;
+
+        .filename {
+          font-size: 20px;
+          margin-block: 5px;
+          font-weight: 400;
+        }
+
+        .menu-section {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+
+    .header-right-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .collabarate-btn {
+        height: 40px;
+        padding: 10px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        border: none;
+        background-color: lightblue;
+        color: black;
+      }
+
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .toolbar {
+    background: rgb(195, 215, 221);
+    height: 35px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    .options-section {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border-right: 1px solid;
+      padding-inline: 10px;
+
+
+      .toolbar-item {
+        height: 15px;
+        width: 15px;
+        stroke-width: 1.5;
+      }
+
+      .dropdown-menu {
+        margin: 0;
+        display: flex;
+        p {
+          margin: 0;
+        }
+      }
+
+      .font-size-box {
+        justify-content: center;
+        // align-items: center;
+        border: 1px solid;
+        border-radius: 5px;
+        p {
+             padding: 4px 8px;
+        }
+      }
+    }
+  }
+}
