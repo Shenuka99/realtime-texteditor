@@ -1,5 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(252, 252, 231);
+  overflow: hidden;
 }
 body .header {
   display: flex;
@@ -84,6 +86,25 @@ body .toolbar .options-section .font-size-box {
 }
 body .toolbar .options-section .font-size-box p {
   padding: 4px 8px;
+}
+body main {
+  width: calc(100% - 20px * 2);
+  margin-inline: 20px;
+  margin-block: 1.5rem;
+  padding-block: 15px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgrey;
+  border-bottom: none;
+  overflow-y: scroll;
+}
+body main .text-area {
+  width: 60vw;
+  min-width: 300px;
+  height: 100%;
+  border-color: lightgrey;
+  background-color: rgb(255, 255, 255);
+  height: 180vh;
 }
 
 /*# sourceMappingURL=style.css.map */

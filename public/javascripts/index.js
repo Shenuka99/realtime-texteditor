@@ -1,15 +1,26 @@
-import { createIcons, icons } from 'lucide';
+function adjustDynamicHeight(){
+  const header = document.querySelector('.header')
+  const toolbar = document.querySelector('.toolbar')
+  const editArea = document.getElementsByTagName('main')[0]
 
-// Caution, this will import all the icons and bundle them.
-createIcons({ icons });
 
-// Recommended way, to include only the icons you need.
-import { createIcons, Menu, ArrowRight, Globe } from 'lucide';
+  const headerHeight = header.offsetHeight
+  const toolbarHeight = toolbar.offsetHeight
+  const topPadding = 8
+  const marginBlock = 48
+  const paddingBlock = 15
 
-createIcons({
-  icons: {
-    Menu,
-    ArrowRight,
-    Globe
-  }
-});
+
+
+  const editAreaHeight = window.innerHeight - (headerHeight+toolbarHeight+topPadding+marginBlock+paddingBlock) 
+
+  console.log('total', window.innerHeight)
+  console.log('header', headerHeight)
+  console.log('toolbar', toolbarHeight) 
+  console.log('editarea', editAreaHeight)
+
+  editArea.style.height = `${editAreaHeight}px`
+}
+
+window.addEventListener('load', adjustDynamicHeight)
+window.addEventListener('resize', adjustDynamicHeight)
